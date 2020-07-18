@@ -5,7 +5,7 @@
 <ul>
     {{#each burgers}}
     {{#unless sleepy}}
-    {{> cats/cat-block sleep=true}}
+    {{> burgers/burger-block sleep=true}}
     {{/unless}}
     {{/each}}
 </ul>
@@ -15,7 +15,7 @@
 <ul>
     {{#each burgers}}
     {{#if sleepy}}
-    {{> cats/cat-block sleep=false}}
+    {{> burgers/burger-block sleep=false}}
     {{/if}}
     {{/each}}
 </ul>
