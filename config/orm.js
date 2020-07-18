@@ -23,9 +23,9 @@ const orm = {
     });
   },
 
-  delete: (table, updatevalue, id, cb) => {
-    const queryString = "UPDATE ?? SET ? WHERE ?";
-    const values = [table, updatevalue, id];
+  delete: (table, condition, cb) => {
+    const queryString = "DELETE FROM ?? WHERE ?";
+    const values = [table, condition];
 
     connection.query(queryString, values, (err, result) => {
       if (err) {
