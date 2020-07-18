@@ -8,12 +8,12 @@ const burger = {
   },
 
   create: (newBurger, cb) => {
-    orm.create("burgers", newCat, (res) => {
+    orm.create("burgers", newBurger, (res) => {
       cb(res);
     });
   },
   update: (burgerData, criteria, cb) => {
-    orm.update("burgers", catData, criteria, (res) => {
+    orm.update("burgers", burgerData, criteria, (res) => {
       cb(res);
     });
   },
