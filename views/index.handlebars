@@ -4,18 +4,18 @@
 
 <ul>
     {{#each burgers}}
-    {{#unless sleepy}}
-    {{> burgers/burger-block sleep=true}}
+    {{#unless devoured}}
+    {{> burgers/burger-block devoured=true}}
     {{/unless}}
     {{/each}}
 </ul>
 
-<h2>Cats that are sleepy!</h2>
+<h2>Burgers that have been devoured!!!!</h2>
 
 <ul>
     {{#each burgers}}
-    {{#if sleepy}}
-    {{> burgers/burger-block sleep=false}}
+    {{#if devoured}}
+    {{> burgers/burger-block devoured=false}}
     {{/if}}
     {{/each}}
 </ul>
