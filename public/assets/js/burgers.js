@@ -24,4 +24,21 @@ $(() => {
       location.reload();
     });
   });
+
+  $(".change-devoured").on("click", function () {
+    const id = $(this).data("id");
+    const devoured = $(this).data("devoured");
+
+    const newDevouredState = { value: devoured };
+
+    $.ajax(`/api/burgers/${id}/devoured`, {
+      type: "PUT",
+
+      data: JSON.stringify(newDevouredState),
+
+      contentType: "application/json; charset=UTF-8",
+    }).then(() => {
+      location.reload();
+    });
+  });
 });

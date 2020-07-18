@@ -23,6 +23,19 @@ const orm = {
     });
   },
 
+  update: (table, updateValues, condition, cb) => {
+    const queryString = "UPDATE ?? SET ? WHERE ?";
+    const values = [table, updateValues, condition];
+
+    console.log(queryString);
+    connection.query(queryString, values, (err, result) => {
+      if (err) {
+        throw err;
+      }
+      cb(result);
+    });
+  },
+
   delete: (table, condition, cb) => {
     const queryString = "DELETE FROM ?? WHERE ?";
     const values = [table, condition];
