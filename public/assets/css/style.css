@@ -1,0 +1,31 @@
+body {
+  background-image: url(../images/burger.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 2em;
+  font-family: impact, arial, sans-serif;
+}
+h2 {
+  font-family: impact, arial, sans-serif;
+}
+
+li {
+  font-size: 1.2em;
+  font-weight: bold;
+  list-style-type: none;
+  padding-bottom: 0.5em;
+}
+
+span {
+  left: 50%;
+}
+
+.label {
+  font-family: impact, arial, sans-serif;
+}
