@@ -8,4 +8,7 @@ To start the application off the user needs to enter a burger. That input will b
 
 ## What it looks like
 
-![](/public/assets/images/home.png)
+- Heroku: https://evening-retreat-56464.herokuapp.com/
+- GitHub: https://github.com/tlam1288/Burger-Eater
+
+![](public/assets/images/home.png)
